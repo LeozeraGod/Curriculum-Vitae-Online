@@ -1,124 +1,125 @@
-/* RESET global */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd,
-li {
-  margin-block-end: 0;
-}
- 
 body {
-    font-family: 'Albert Sans', Arial, Helvetica, sans-serif;
-    width: 1000px;
-    height: auto;
-    max-width: 1000px;
-    margin: 0 auto;
-    color: rgb(78, 37, 44);
-    background-image: url(./Assets/wood-1868104_1280.jpg);
-
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    padding: 50px;
 }
 
-#menu {
-  width: 100%;
-  height: 70px;
-  background-color: rgb(247, 225, 186);;
-  padding-top: 20px;
-  border: 2px solid #000;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 1.5px;
-
-}
-
-#menu ul {
-  display: flex;
-  justify-content: space-around;
-
-}
-
-#menu ul li {
-  list-style: none;
-}
-
-#menu ul li a {
-  text-decoration: none;
-  color: rgb(78, 37, 44);
-  font-size: 22px;
-  font-weight: 600;
-
-&:hover {
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 2px solid #000;
-  background-color: #91391e;
-  color: wheat;
-}
-}
-
-#titulo {
-    width: 100%;
-    height: auto;
+.header {
+    background-color: #007bff;
+    color: white;
+    height: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 225, 186);
-    border: 2px solid #000;
-    border-radius: 10px;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contacts p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.contacts a {
+    color: white;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.about {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
     padding: 20px;
-    margin-bottom: 1.5px;
-}
-#titulo h1 {
-  padding: 10px;
-  background-color: #91391e;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  color:wheat;
-}
-#titulo img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #000;
-
+    background-color: #f0f8ff;
 }
 
+.about h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
 
-#conteudo {
-    width: 100%;
-    height: auto;
-    background-color: rgb(247, 225, 186);
-    padding: 0 60px;
-    padding-top: 40px;
-    border: 2px solid #000;
-    display: grid;
-    grid-template-columns: 30% 60%;
-    border-radius: 10px;
-    gap: 10%;
+.experience-education {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
     padding: 20px;
-    margin-bottom: 1.5px;
 }
 
-
-#Ingredientes, #modo-preparo {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.experience, .education {
+    width: 48%;
 }
+
+.experience h2, .education h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+.job h3, .education-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.interests-languages {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+}
+
+.interests, .languages {
+    width: 48%;
+}
+
+.interests h2, .languages h
