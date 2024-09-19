@@ -8,16 +8,16 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: #f7f7f7;
-    padding: 50px;
+    padding: 0 50px 0 50px;
 }
 
 .header {
-    background-color: #007bff;
+    background-color: #7cb4f0;
     color: white;
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .header-container {
@@ -46,14 +46,21 @@ body {
     font-weight: bold;
 }
 
+.dev {
+    font-weight: bold;
+}
+
 .header-content p {
     font-size: 20px;
     margin: 10px 0;
+    line-height: 1.2;
+
 }
 
 .contacts p {
     font-size: 20px;
     margin: 5px 0;
+    flex: 1;
 }
 
 .contacts a {
@@ -62,7 +69,9 @@ body {
 }
 
 .contacts a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: black;
+    
 }
 
 main {
@@ -87,15 +96,16 @@ main {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 0 auto 50px auto;
+    margin: auto;
     padding: 20px;
+    gap: 50px;
 }
 
 .experience, .education {
     width: 48%;
 }
 
-.experience h2, .education h2 {
+.content-column h2 {
     font-size: 30px;
     font-weight: bold;
     color: #007bff;
@@ -122,9 +132,12 @@ main {
 
 .interests, .languages {
     width: 48%;
+    
 }
 
-.interests h2, .languages h
-{
 
+
+li {
+    list-style: none;
+    padding: 5px;
 }
