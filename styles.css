@@ -88,7 +88,7 @@ body {
  
 #conteudo {
     padding: 0 100px;
-    background-color: #FAF7F0;
+    background-color: #D8D2C2;
     height: auto;
     
 }
@@ -101,7 +101,6 @@ body {
 }
 #experiencias h3,
 #formacao h3 {
-    padding-top: 20px;
     font: bold;
     
 }
@@ -113,14 +112,17 @@ li {
     padding-top: 10px;
 }
 
+#experiencias p  {
+    padding-bottom: 10px;
+}
 #sobre-mim {
     margin:0px 10px 20px 0px;
 }
-#sobre-mim h2 {
+#sobre-mim h1 {
 
    font-size: 50px;
    color: #004ADB;
-    margin: 0px 0px 20px 0;
+padding: 15px 0;
 }
 #endereco {
     text-align: right;
