@@ -25,7 +25,7 @@ dd {
 body {
     
     background-color: #f1f1f1;
-    font-family: "inter" Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     width: 1000px;
     height: 300px;
     padding: 0px;
@@ -33,13 +33,15 @@ body {
     max-width: 1000px;
  }
 #header {
-    display: flex;
-    gap: 20px;
-    background-color: #4098f7;
-    padding: 10px;
-    padding: 10px;
-    border: 5px ;
-    margin: auto;
+    width: 100%;
+    height: 300px;
+   background-color: #B17457;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    padding: 0 50px;
+    font-size: 14px;
+    font-weight: 200;
 
     
 }
@@ -47,8 +49,6 @@ body {
     font-size: 50px;
     font: bold;
     color: white;
-    margin-top: 50px;
-    padding-top: 30px;
     
 }
 #nome h4 {
@@ -65,28 +65,30 @@ body {
     
 
 }
-#dados a {
+#contato {
+    text-align: end;
     color: white;
-    text-decoration: none;
-    
-    
-    &:hover {
-        color: black;
-    }
-
 }
-#foto img {
+
+#contato a {
+    text-decoration: none;
+    color: white;
+}
+#contato a:hover {
+    color: black;
+    text-decoration: solid;
+}
+
+#header img {
     width: 250px;
     height: 250px;
-    border-radius: 300px;
-    margin-top: 10px;
-    align-items: center;
-
-} 
+    border-radius: 100%;
+    border: 2px solid white;
+  }
  
 #conteudo {
     padding: 0 100px;
-    background-color: white;
+    background-color: #FAF7F0;
     height: auto;
     
 }
@@ -129,11 +131,7 @@ li {
 #nome {
     padding: 10px;
 }
-#experiencias h1,
-#formacao h1,
-#interesses h1,
-#linguas h1
- {
+#experiencias h1, #formacao h1, #interesses h1, #linguas h1 {
     font-size: 30px;
     font: bold;
     color: #004ADB;
