@@ -187,12 +187,13 @@ li {
         color: #220000;
         text-decoration: solid;
     }
-    
+
     #conteudo {
         padding: 20px;
     }
 
     .container {
+
         grid-template-columns: 1fr;
     }
 
